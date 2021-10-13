@@ -1,0 +1,216 @@
+/* Page-wide styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header - contains Hall of Fame link and timer */
+
+header {
+    background-color: rgb(172, 172, 172);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Hall of fame link */
+
+header div#hof {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header div#hof:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+/* Timer */
+
+header #time {
+    font-weight: bold;
+}
+
+/* Main container to display start, question, end of quiz, and hall of fame divs */
+
+main .container {
+    width: 500px;
+    margin: 0 auto;
+    
+}
+
+@media screen and (max-width: 768px) {
+ main .container {
+     width: 300px;
+ }
+}
+
+main .container h1 {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/* Start screen div */
+
+main .container .start-div {
+    display: block;
+}
+
+main .container .start-div p {
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+main div.start-btn {
+    display: flex;
+    justify-content: center;
+}
+
+main div.start-btn button {
+    background-color: rgb(212, 31, 31);
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid rgb(216, 4, 50);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main div.start-btn button:hover {
+    background-color: rgb(136, 0, 0);
+}
+
+/* Question screen div */
+
+main .container .question-div {
+    display: none;
+}
+
+main .container .question-div .buttons {
+    margin-bottom: 10px;
+}
+
+main .container .question-div .buttons button {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    background-color: rgb(247, 14, 25);
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgb(243, 103, 103);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main .container .question-div .buttons button:hover {
+    background-color: rgb(168, 168, 168);
+}
+
+/* Flash-messages Right or Wrong */
+
+main .container .question-div #right-wrong {
+    display: none;
+    transition: 0.3s;
+}
+
+main .container .question-div .right {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(181, 235, 181);
+    font-weight: bold;
+    font-style: italic;
+}
+
+main .container .question-div .wrong {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(235, 162, 162);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* End of quiz screen div */
+
+main .container .end-div {
+    display: none;
+}
+
+main .container .end-div h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main .container .end-div form {
+    text-align: center;
+}
+
+main .container .end-div form input {
+    font-size: 1.2rem;
+}
+
+main .container .end-div label {
+    display: block;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+main .container .end-div button {
+    background-color: rgb(167, 167, 167);
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid rgb(248, 40, 40);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main .container .end-div button:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+/* Hall of Fame screen div */
+
+main .container .hall-of-fame {
+    display: none;
+}
+
+main .container .hall-of-fame ol li {
+    padding: 10px 10px 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main .container .hall-of-fame ol li:nth-child(odd) {
+    background-color:  rgb(214, 214, 214);
+}
+
+main .container .hall-of-fame ol li:nth-child(even) {
+    background-color:  rgb(194, 194, 194);
+}
+
+main .container .hall-of-fame div#hof-btns {
+    margin-top: 20px;
+}
+
+main .container .hall-of-fame div#hof-btns button {
+    background-color: rgb(211, 211, 211);
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid rgb(243, 50, 66);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main .container .hall-of-fame div#hof-btns button:hover {
+    background-color: rgb(134, 134, 134);
+}
